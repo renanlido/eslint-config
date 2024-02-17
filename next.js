@@ -5,14 +5,12 @@ module.exports = {
     jest: true,
   },
   extends: [
-    "standard-with-typescript",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
     "standard",
-    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
     "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
   ignorePatterns: [".eslintrc.js", "react.js", "next.js", "node_modules"],
   parser: "@typescript-eslint/parser",
@@ -23,13 +21,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: [
-    "react",
-    "@typescript-eslint",
-    "jsx-a11y",
-    "react-refresh",
-    "import",
-  ],
+  plugins: ["jsx-a11y", "@typescript-eslint", "import"],
   rules: {
     "import/order": [
       "error",
@@ -57,9 +49,6 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
-    "react/self-closing-comp": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
     "jsx-a11y/alt-text": [
       "warn",
       {
@@ -74,7 +63,6 @@ module.exports = {
     "jsx-a11y/role-supports-aria-props": "warn",
     "react/no-unknown-property": "error",
   },
-
   settings: {
     react: {
       version: "detect",
