@@ -57,9 +57,6 @@ module.exports = {
         endOfLine: "auto",
       },
     ],
-    "react/self-closing-comp": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
     "jsx-a11y/alt-text": [
       "warn",
       {
@@ -67,12 +64,22 @@ module.exports = {
         img: ["Image"],
       },
     ],
-    "jsx-a11y/aria-props": "warn",
+    "react/self-closing-comp": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/prefer-default-export": "off",
+    "no-undef": "off",
+    "jsx-a11y/role-supports-aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
     "jsx-a11y/aria-unsupported-elements": "warn",
     "jsx-a11y/role-has-required-aria-props": "warn",
     "jsx-a11y/role-supports-aria-props": "warn",
     "react/no-unknown-property": "error",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
   },
 
   settings: {
