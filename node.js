@@ -15,7 +15,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint", "import"],
-  ignorePatterns: [".eslintrc.js", "react.js", "next.js", "node_modules"],
+  ignorePatterns: [".eslintrc.js", "node_modules"],
   rules: {
     "import/order": [
       "error",
@@ -39,7 +39,7 @@ module.exports = {
         singleQuote: true,
         trailingComma: "all",
         arrowParens: "always",
-        semi: false,
+        semi: true,
       },
     ],
     "import/no-cycle": "off",
