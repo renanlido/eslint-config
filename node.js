@@ -49,6 +49,7 @@ module.exports = {
     "consistent-return": "off",
     "import/no-duplicates": "error",
     "no-undef": "off",
+    "no-useless-constructor":"off"
   },
   settings: {
     "import/parsers": {
