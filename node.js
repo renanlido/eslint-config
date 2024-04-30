@@ -38,7 +38,7 @@ module.exports = {
         singleQuote: true,
         trailingComma: "all",
         arrowParens: "always",
-        semi: true,
+        semi: false,
       },
     ],
     "import/no-cycle": "off",
